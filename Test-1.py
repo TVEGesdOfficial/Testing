@@ -1,9 +1,10 @@
-def check_even_odd(num):
-  if num % 2 == 0:
-    return f'{num} is enven'
-  else:
-    return f'{num} is odd'
+import random
+import time
 
-# Test the function
-print(check_even_odd(4))
-print(check_even_odd(7))
+def generate_ip():
+    return f"{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}.{random.randint(0, 255)}"
+
+while True:
+    print(generate_ip())
+    time.sleep(2)
+    
